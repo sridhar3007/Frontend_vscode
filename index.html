@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⚽ Football World</h1>
+    <nav>
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('teams')">Teams</a>
+      <a href="#" onclick="showPage('leagues')">Leagues</a>
+      <a href="#" onclick="showPage('about')">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <h1>Welcome to Football World</h1>
+      <p>⚽ Football is more than just a game — it's a global culture that brings people together.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Football_pictogram.svg" alt="Football Icon" class="banner-img">
+
+      <h2>🌍 Global Reach</h2>
+      <p>With over 4 billion fans, football is the most popular sport on Earth.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/FIFA_World_Cup_Trophy.jpg" alt="World Cup Trophy" class="section-img">
+
+      <h2>🏆 Major Competitions</h2>
+      <ul>
+        <li>FIFA World Cup</li>
+        <li>UEFA Champions League</li>
+        <li>English Premier League</li>
+        <li>La Liga, Serie A, Bundesliga, Ligue 1</li>
+      </ul>
+
+      <h2>🎉 Passionate Fans</h2>
+      <p>Whether it's chants, flags, or painting faces, football fans are known for their passion.</p>
+    </section>
+
+    <section id="teams" class="page">
+      <h1>Famous Footballers</h1>
+      <div class="cards">
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
+          <h3>Cristiano Ronaldo</h3>
+          <p>5x Ballon d'Or. Known for his athleticism and leadership.</p>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Argentina_vs._Iceland_%2817%29.jpg" alt="Lionel Messi">
+          <h3>Lionel Messi</h3>
+          <p>8x Ballon d'Or. Argentina's magician and 2022 World Champion.</p>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Neymar_warm_up_2018.jpg" alt="Neymar Jr">
+          <h3>Neymar Jr</h3>
+          <p>Brazilian star known for flair, skill, and creativity.</p>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Kylian_Mbapp%C3%A9_2019.jpg" alt="Kylian Mbappé">
+          <h3>Kylian Mbappé</h3>
+          <p>Lightning-fast striker. 2018 World Cup winner with France.</p>
+        </div>
+        <div class="card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Erling_Haaland_2023.jpg" alt="Erling Haaland">
+          <h3>Erling Haaland</h3>
+          <p>Goal machine. Dominated the Premier League with Man City.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="leagues" class="page">
+      <h1>Top Football Leagues</h1>
+      <ul class="leagues">
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg" alt="Premier League">
+          Premier League (England)
+        </li>
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/La_Liga_logo.svg" alt="La Liga">
+          La Liga (Spain)
+        </li>
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Serie_A_logo_%282019%29.svg" alt="Serie A">
+          Serie A (Italy)
+        </li>
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Bundesliga_logo_%282017%29.svg" alt="Bundesliga">
+          Bundesliga (Germany)
+        </li>
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/Ligue1.svg" alt="Ligue 1">
+          Ligue 1 (France)
+        </li>
+      </ul>
+    </section>
+
+    <section id="about" class="page">
+      <h1>About Football</h1>
+      <p>Football is the most played and watched sport in the world.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Football_match_-_Melbourne_City_vs_Newcastle_Jets.jpg" alt="Stadium Crowd" class="section-img">
+      <p>It started in the 19th century in England and has since grown into a massive international phenomenon.</p>
+      <p>Football teaches teamwork, discipline, and perseverance. It's played by people of all ages in every corner of the world.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Football World. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
